@@ -12,9 +12,9 @@ public class TestController {
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "Skyguide") String name) {
-		System.out.println("in controller");
+		System.out.println("in controller ");
  
-		ModelAndView mv = new ModelAndView("dummyworld");
+		ModelAndView mv = new ModelAndView("dummy CICD World");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
 		return mv;
